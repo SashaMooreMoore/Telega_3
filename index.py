@@ -21,3 +21,7 @@ with open(photo_1, 'wb') as file:       # 'wb' b - обозначение бин
 
 with open(photo_2, 'wb') as file: 
     file.write(response_two.content)   
+
+
+result = DeepFace.verify(photo_1, photo_2)
+print(result)
